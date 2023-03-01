@@ -44,9 +44,9 @@ for (let i = 0; i < themeBtn.length; i++) {
     // toggle `light-theme` & `dark-theme` class from `body`
     // when clicked `theme-btn`
     if (document.body.classList.contains('dt')) {
-      disableDarkMode();
+      enableLightMode
     } else {
-      enableLightMode();
+      enableDarkMode();
     }
 
     for (let i = 0; i < themeBtn.length; i++) {
