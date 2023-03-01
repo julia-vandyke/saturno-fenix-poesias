@@ -1,4 +1,4 @@
-[data-theme="light"] {
+light-theme {
 
   /**
    * cores do tema claro
@@ -18,7 +18,7 @@
 
 } 
 
-[data-theme="dark"] {
+dark-theme {
 
   /**
    * cores do tema escuro
@@ -116,13 +116,13 @@ html {
   border: 4px solid;
 }
 
-[data-theme="light"] ::-webkit-scrollbar-thumb { border-color: hsl(0, 0%, 90%); }
+light-theme ::-webkit-scrollbar-thumb { border-color: hsl(0, 0%, 90%); }
 
-[data-theme="dark"]::-webkit-scrollbar-thumb { border-color: hsl(219, 27%, 20%); }
+dark-theme::-webkit-scrollbar-thumb { border-color: hsl(219, 27%, 20%); }
 
-[data-theme="light"] ::-webkit-scrollbar-track { background: hsl(0, 0%, 90%); }
+light-theme ::-webkit-scrollbar-track { background: hsl(0, 0%, 90%); }
 
-[data-theme="dark"]::-webkit-scrollbar-track { background: hsl(219, 27%, 20%); }
+dark-theme::-webkit-scrollbar-track { background: hsl(219, 27%, 20%); }
 
 
 
@@ -221,21 +221,21 @@ html {
   #Estilo extra para o tema escuro
 \*-----------------------------------*/
 
-[data-theme="dark"] .btn-primary:hover { color: var(--background-primary); }
+dark-theme .btn-primary:hover { color: var(--background-primary); }
 
-[data-theme="dark"] .blog-topic {
+dark-theme .blog-topic {
   background: var(--action-primary);
   color: var(--foreground-secondary);
 }
 
-[data-theme="dark"] .blog-topic:hover {
+dark-theme .blog-topic:hover {
   background: var(--foreground-primary);
   color: var(--action-primary);
 }
 
-[data-theme="dark"] .load-more:hover { color: var(--white); }
+dark-theme .load-more:hover { color: var(--white); }
 
-[data-theme="dark"] .aside .h2 { color: var(--foreground-primary); }
+dark-theme .aside .h2 { color: var(--foreground-primary); }
 
 
 
@@ -259,8 +259,8 @@ header .flex-wrapper { display: none; }
 .logo-light,
 .logo-dark { display: none; }
 
-[data-theme="light"] .logo-light,
-[data-theme="dark"] .logo-dark { display: flex; }
+light-theme .logo-light,
+dark-theme .logo-dark { display: flex; }
 
 header .btn-group {
   display:     flex;
