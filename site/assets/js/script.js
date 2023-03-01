@@ -18,12 +18,14 @@ navCloseBtn.addEventListener('click', navToggleFunc);
 const themeBtn = document.querySelectorAll('.theme-btn');
 
 function enableDarkMode() {
+  document.body.classList.remove('lt');
   document.body.classList.add('dt');
   localStorage.setItem('tm', 'dt');
   document.body.classList.toggle('dark-theme');
 }
 
 function enableLightMode() {
+  document.body.classList.remove('lt');
   document.body.classList.add('lt');
   localStorage.setItem('tm', 'lt');
   document.body.classList.toggle('light-theme');
@@ -32,7 +34,7 @@ function enableLightMode() {
 const storedTheme = localStorage.getItem('tm');
 
 if (storedTheme === 'dt') {
-  enableDarkMode();
+  enableDarkMode
 } else {
   enableLightMode
 }
@@ -46,7 +48,7 @@ for (let i = 0; i < themeBtn.length; i++) {
     if (document.body.classList.contains('dt')) {
       enableLightMode
     } else {
-      enableDarkMode();
+      enableDarkMode
     }
 
     for (let i = 0; i < themeBtn.length; i++) {
