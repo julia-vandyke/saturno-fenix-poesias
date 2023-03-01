@@ -14,6 +14,7 @@ navCloseBtn.addEventListener('click', navToggleFunc);
 
 
 
+/**
 // theme toggle variables
 const themeBtn = document.querySelectorAll('.theme-btn');
 
@@ -38,4 +39,20 @@ for (let i = 0; i < themeBtn.length; i++) {
 
   })
 
+}
+*/
+
+
+
+// Check if the theme preference is already saved in the local storage
+let theme = localStorage.getItem('theme');
+
+// If not saved, check if the user prefers dark mode
+if (theme === null) {
+  if (window.matchMedia && window.matchMedia('(prefers-color-scheme:)').matches) {
+    document.body.classList.add('dark-theme');
+    theme = 'dark-theme';
+  } else {
+    
+  }
 }
