@@ -53,6 +53,36 @@ if (theme === null) {
     document.body.classList.add('dark-theme');
     theme = 'dark-theme';
   } else {
-    
+    document.body.classList.add('light-theme');
+    theme = 'light-theme';
   }
+} else {
+  // If the user has a saved preference, use that
+  document.body.classList.add(theme);
+}
+
+// Add event listener to the theme button to toggle theme
+const themeBtn = document.querySelectorAll('.theme-btn');
+
+for (let i = 0; i < themeBtn.length; i++) {
+  themeBtn[i].addEventListener('click', function () {
+    if (theme === 'light-theme') {
+      document.body.classList.remove('light-theme');
+      document.body.classList.add('dark-theme');
+      theme = 'dark-theme';
+    } else {
+      document.body.classList.remove('dark-theme');
+      document.body.classList.add('light-theme');
+      theme = 'light-theme';
+    }
+
+    // Save the theme preference to local storage
+    localStorage.setItem('theme', theme);
+
+    // Toggle theme button icons
+    for (let i = 0; i < themeBtn.length; i++) {
+      themeBtn[i].classList.toggle('light');
+      themeBtn[i].classList.toggle('dark');
+    }
+  });
 }
