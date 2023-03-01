@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saturno Fenix Poesias</title>
+
+    <!--
+    - favicon
+  -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/saturno-png.png"
+      type="image/x-icon"
+    />
+
+    <!--
+    - link css customizado
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!--
+    - link da google fonts
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/filter.js"></script>
+  </head>
+
+  <body class="light-theme">
+    <!--
+    - #HEADER
+  -->
+
+    <a href="./index.html" class="floating-btn">
+      <ion-icon name="home-outline"></ion-icon>
+    </a>
+
+    <header>
+      <div class="container">
+        <nav class="navbar">
+          <a href="./index.html">
+            <img
+              src="./assets/images/saturno-png.png"
+              alt="logo do site"
+              width="150"
+              height="150"
+              class="logo-light"
+            />
+            <img
+              src="./assets/images/saturno-png.png"
+              alt="logo do site"
+              width="150"
+              height="150"
+              class="logo-dark"
+            />
+          </a>
+
+          <div class="btn-group">
+            <button class="theme-btn theme-btn-mobile light">
+              <ion-icon name="moon" class="moon"></ion-icon>
+              <ion-icon name="sunny" class="sun"></ion-icon>
+            </button>
+
+            <button class="nav-menu-btn">
+              <ion-icon name="menu-outline"></ion-icon>
+            </button>
+          </div>
+
+          <div class="flex-wrapper">
+            <ul class="desktop-nav">
+              <li>
+                <a href="#" class="nav-link">Início</a>
+              </li>
+
+              <li>
+                <a href="./sobre-mim.html" class="nav-link">Sobre Mim</a>
+              </li>
+            </ul>
+
+            <button class="theme-btn theme-btn-desktop light">
+              <ion-icon name="moon" class="moon"></ion-icon>
+              <ion-icon name="sunny" class="sun"></ion-icon>
+            </button>
+          </div>
+
+          <div class="mobile-nav">
+            <button class="nav-close-btn">
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="wrapper">
+              <p class="h3 nav-title">Menu</p>
+
+              <ul>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Início</a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="./sobre-mim.html" class="nav-link">Sobre Mim</a>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <p class="h3 nav-title">Tópicos</p>
+
+              <ul>
+                <li class="nav-item" data-topic="romantico">
+                  <a href="#" class="nav-link">Romântico</a>
+                </li>
+
+                <li class="nav-item" data-topic="saude-mental">
+                  <a href="#" class="nav-link">Saúde Mental</a>
+                </li>
+
+                <li class="nav-item" data-topic="reflexao">
+                  <a href="#" class="nav-link">Reflexão</a>
+                </li>
+
+                <li class="nav-item" data-topic="ficcao">
+                  <a href="#" class="nav-link">Ficção</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!--
+      - #SEÇÃO DO HERO
+    -->
+
+      <div class="hero">
+        <div class="container">
+          <div class="left">
+            <a class="h1" href="./index.html">
+              Seja bem vindo ao <b>Saturno Fenix Poesias</b>. <br />
+            </a>
+
+            <a class="h3" href="./index.html">
+              Todos os poemas foram feitos com muito carinho e dedicação. Tenha uma boa leitura.
+            </a>
+
+            <div class="btn-group">
+              <a href="./sobre-mim.html" class="btn btn-primary">Sobre Mim</a>
+            </div>
+          </div>
+
+          <div class="right">
+            <div class="pattern-bg"></div>
+            <div class="img-box">
+              <img
+                src="./assets/images/foto-png.png"
+                alt="Matheus Van Dyke"
+                class="hero-img"
+              />
+              <div class="shape shape-1"></div>
+              <div class="shape shape-2"></div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="search-container">
+            <input type="text" id="search-bar" placeholder="Digite aqui...">
+            <button type="submit" id="search-btn">Pesquisar<i class="fa fa-search"></i></button>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="main">
+        <div class="container">
+          <!--
+          - SEÇÃO DO BLOG
+        -->
+
+        <!--
+          - Quando for adicionar um novo poema, criar uma pagina separada copiando o 
+          conteudo do post com a classe "poema" E depois colar na pagina separada e mudar o nome 
+          da classe "poema" para "poema-completo" e tambem de "previa-poema" para "texto-poema-completo"
+        -->
+
+          <div class="blog">
+            <h2 class="h2">Ultimos Posts</h2>
+
+            <div class="poemas-group" data-topic="all">
+
+              <div name="antigo-parque-#13" class="poema" data-topics="saude-mental">
+                <div class="poema-banner">
+                  <img
+                    src="./assets/images/images-blog-posts/antigo-parque.jpg"
+                    alt="antigo-parque"
+                    width="250"
+                    class="poema-banner-img"
+                  />
+                </div>
+
+                <div class="blog-content-wrapper">
+                  
+                  <button class="blog-topic text-tiny" data-topic="saude-mental"> Saúde Mental </button>
+
+                    <a class="titulo-poema" href="./poemas/antigo-parque-13.html">
+                      Antigo Parque #13
+                    </a>
+
+                  <p class="previa-poema">
+                    Eu olho para cima.<br>
+                    E vejo o tempo nublado.<br>
+                    As nuvens escuras e densas.<br>
+                    O sol que a muito tempo já não brilha no horizonte.<br>
+                    O frio congela minhas mãos.<br>
+                    O silêncio incomoda meus ouvidos e atordoa minha alma.<br>
+                    <br>
+                    Antes ouviam-se risadas, conversas e cantorias das pessoas que aqui vinham para se alegrar.<br>
+                    Agora não se ouve mais nada.<br>
+                    E uma neblina muito grossa se espalha pelo local.<br>
+                    Me impedindo de ver muito além.<br>
+                    Os bancos estão vazios.<br>
+                    Não há mais ninguém aqui a muito tempo.<br>
+                    <br>
+                    As folhas secas.<br>
+                    Das árvores mortas.<br>
+                    Que antes eram belas.<br>
+                    Agora voam ao vento.<br>
+                    Ao vento frio e agressivo.<br>
+                    A grama sem cor.<br>
+                    Uma trilha de lajes cinzas e rachadas.<br>
+                    Pela qual entrei.<br>
+                    <br>
+                    Eu sigo por ela de novo, tentando achar uma saída.<br>
+                    Mas ela sempre me leva de volta ao mesmo lugar.<br>
+                    Por mais que eu tente eu não consigo achar a saída.<br>
+                    Seja pela trilha ou entre as as árvores densas do mato ao longe.<br>
+                    Todo caminho me leva de volta pra cá.<br>
+                    Esse local me prende como um labirinto.<br>
+                    Eu entrei há muito tempo e parece que não há como voltar.<br>
+                    E mesmo se eu voltasse, eu não seria o mesmo de quando entrei.<br>
+                  </p>
+
+                  <div class="wrapper-flex">
+                    <div class="profile-wrapper">
+                      <img
+                        src="./assets/images/foto.jpg"
+                        alt="Matheus Van Dyke"
+                        width="50"
+                      />
+                    </div>
+
+                    <div class="wrapper">
+                      <a href="#" class="h4">Matheus Van Dyke</a>
+
+                      <p class="text-sm">
+                        <time datetime="23-02-2023">26 Fevereiro, 2023</time>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div name="algo-que-ja-foi-#12" class="poema" data-topics="saude-mental">
+                <div class="poema-banner">
+                  <img
+                    src="./assets/images/images-blog-posts/algo-que-ja-foi.jpg"
+                    alt="algo-que-ja-foi"
+                    width="250"
+                    class="poema-banner-img"
+                  />
+                </div>
+
+                <div class="blog-content-wrapper">
+                  
+                  <button class="blog-topic text-tiny" data-topic="saude-mental"> Saúde Mental </button>
+
+                    <a class="titulo-poema" href="./poemas/algo-que-ja-foi-12.html">
+                      Algo que já foi #12
+                    </a>
+
+                  <p class="previa-poema">
+                    A alguns dias atrás um homem passou por essa estrada.<br>
+                    Ele era um viajante solitário...<br>
+                    Não sabia bem como andar em frente sem olhar o passado.<br>
+                    <br>
+                    Depois de tanto desejar mudar algo que já aconteceu.<br>
+                    E eternidades revivendo o que ele sofreu.<br>
+                    Depois de muito tempo ele finalmente segue o conselho que lhe foi dado.<br>
+                    Ele poe todo esse sentimento que lhe foi guardado...<br>
+                    O poe dentro de um saco.<br>
+                    E o joga como um corpo no mar.<br>
+                    <br>
+                    Algo que ele não vai ver nunca mais.<br>
+                    Algo que já aconteceu...<br>
+                    E nunca mais vai acontecer.<br>
+                    Ele vai apenas aceitar...<br>
+                    Não vai mais tentar mudar.<br>
+                    E vai apenas como aprendizado levar.<br>
+                  </p>
+
+                  <div class="wrapper-flex">
+                    <div class="profile-wrapper">
+                      <img
+                        src="./assets/images/foto.jpg"
+                        alt="Matheus Van Dyke"
+                        width="50"
+                      />
+                    </div>
+
+                    <div class="wrapper">
+                      <a href="#" class="h4">Matheus Van Dyke</a>
+
+                      <p class="text-sm">
+                        <time datetime="23-02-2023">26 Fevereiro, 2023</time>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div name="abaixo-do-oceano-#11" class="poema" data-topics="reflexao ficcao">
+                <div class="poema-banner">
+                  <img
+                    src="./assets/images/images-blog-posts/abaixo-do-oceano.jpg"
+                    alt="abaixo-do-oceano"
+                    width="250"
+                    class="poema-banner-img"
+                  />
+                </div>
+
+                <div class="blog-content-wrapper">
+                  
+                  <button class="blog-topic text-tiny" data-topic="reflexao"> Reflexão </button>
+                  <button class="blog-topic text-tiny" data-topic="ficcao"> Ficção </button>
+
+                    <a class="titulo-poema" href="./poemas/abaixo-do-oceano-11.html">
+                      Abaixo do Oceano #11
+                    </a>
+
+                  <p class="previa-poema">
+                    De pé na beira do mar...<br>
+                    Eu escuto o som das ondas e das gaivotas.<br>
+                    Vejo o contorno e a forma dos peixes nadando por debaixo da água.<br>
+                    E me aclama profundamente com essa vista não terrestre.<br>
+                    <br>
+                    Eu olho para esse mar tão profundo e misterioso e tento enxergar além.<br>
+                    Eu tento imaginar como deve ser o fundo dessa enorme poça de água ainda não explorada pelo homem.<br>
+                    O que deve haver lá em baixo?<br>
+                    Restos de civilizações antigas e que já foram extintas?<br>
+                    Ou até mesmo civilizações ainda vivas.<br>
+                    <br>
+                    Tritões e sereias ou qualquer tipo de criatura fantasiosa.<br>
+                    Monstros gigantescos que causam enormes tsunamis na superfície?<br>
+                    Seres marítimos que se adaptaram a viver na escuridão?<br>
+                    Eu sei, isso tudo é fantasioso demais.<br>
+                    Mas é isso que eu amo no mar.<br>
+                    Ah, o mar.<br>
+                    <br>
+                    Não só ele mas qualquer imensidão vasta e desconhecida, como o espaço.<br>
+                    Elas dão asas para a nossa imaginação.<br>
+                    Você nunca poderá saber sobre tudo o que tem lá.<br>
+                    Apenas imaginar.<br>
+                    Nisso o mar é como o espaço.<br>
+                    Tão misterioso quanto ele.<br>
+                  
+                    A única diferença é que ao olhar para o céu, ver as estrelas e todo aquele vazio...<br>
+                    Nós estamos olhando para algo maior que nós.<br>
+                    Algo além...<br>
+                    Que nos faz pensar sobre qualquer outra coisa que seja maior que nossa pequena vida humana.<br>
+                    <br>
+                    Já o mar...<br>
+                    Ele me faz pensar em nós mesmos.<br>
+                    E em toda a profundeza do nosso inconsciente.<br>
+                    De coisas que ainda não descobrimos sobre nós.<br>
+                    Ou que apenas não queremos descobrir.<br>
+                    Ele me faz temer e ao mesmo tempo ficar maravilhado.<br>
+                    Com todas as coisas que podem existir.<br>
+                    Não fora...<br>
+                    Mas sim dentro de nós.<br>
+                  </p>
+
+                  <div class="wrapper-flex">
+                    <div class="profile-wrapper">
+                      <img
+                        src="./assets/images/foto.jpg"
+                        alt="Matheus Van Dyke"
+                        width="50"
+                      />
+                    </div>
+
+                    <div class="wrapper">
+                      <a href="#" class="h4">Matheus Van Dyke</a>
+
+                      <p class="text-sm">
+                        <time datetime="23-02-2023">26 Fevereiro, 2023</time>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div name="a-flor-que-importa-#10" class="poema" data-topics="reflexao">
+                <div class="poema-banner">
+                  <img
+                    src="./assets/images/images-blog-posts/a-flor-que-importa.jpg"
+                    alt="a-flor-que-importa"
+                    width="250"
+                    class="poema-banner-img"
+                  />
+                </div>
+
+                <div class="blog-content-wrapper">
+                  
+                  <button class="blog-topic text-tiny" data-topic="reflexao"> Reflexão </button>
+
+                    <a class="titulo-poema" href="./poemas/a-flor-que-importa-10.html">
+                      A Flor que Importa #10
+                    </a>
+
+                  <p class="previa-poema">
+                    O amor é como uma flor...<br>
+                    Que já esta seca.<br>
+                    Enferrujada.<br>
+                    Caída no chão.<br>
+                    Que já foi tirada de seu galho.<br>
+                    Pisoteada.<br>
+                    Cuspida.<br>
+                    Amassada.<br>
+                    <br>
+                    Essa flor já esteve em uma linda arvore.<br>
+                    Quem passava era encantado com sua beleza.<br>
+                    E agora ela esta no chão.<br>
+                    Ninguém lembra mais de como ela era quando estava naquela bela arvore.<br>
+                    E agora à ela só resta o chão frio desse bosque maldito que se chama vida.<br>
+                    Enquanto ela flutua ao vento...<br>
+                    Observando as outras em suas arvores.<br>
+                    <br>
+                    Na próxima vez que você encontrar o amor...<br>
+                    Não deixe ele cair.<br>
+                    Ser pisoteado.<br>
+                    Largado ao chão.<br>
+                    Pegue esta linda flor...<br>
+                    A coloque num vaso.<br>
+                    Cuide bem dela.<br>
+                    E aproveite bem.<br>
+                    Porque um dia ela ira murchar.<br>
+                    Nenhuma pétala restará.<br>
+                    E ela será só mais uma história pra contar.<br>                 
+                  </p>
+
+                  <div class="wrapper-flex">
+                    <div class="profile-wrapper">
+                      <img
+                        src="./assets/images/foto.jpg"
+                        alt="Matheus Van Dyke"
+                        width="50"
+                      />
+                    </div>
+
+                    <div class="wrapper">
+                      <a href="#" class="h4">Matheus Van Dyke</a>
+
+                      <p class="text-sm">
+                        <time datetime="23-02-2023">26 Fevereiro, 2023</time>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div name="noite de blues-#9" class="poema" data-topics="saude-mental">
+                <div class="poema-banner">
+                  <img
+                    src="./assets/images/images-blog-posts/noite-de-blues.jpg"
+                    alt="noite-de-blues"
+                    width="250"
+                    class="poema-banner-img"
+                  />
+                </div>
+
+                <div class="blog-content-wrapper">
+                  
+                  <button class="blog-topic text-tiny" data-topic="saude-mental"> Saúde Mental </button>
+
+                    <a class="titulo-poema" href="./poemas/noite-de-blues-9.html">
+                      Noite de Blues (feat - Miguel) #9
+                    </a>
+
+                  <p class="previa-poema">
+                    O meu império.<br>
+                    Poeira e Lagrimas.<br>
+                    Chuva, banho e choro.<br>
+                    Como na noite que se fez Blues.<br>
+                    <br>
+                    Essa música me trás velhas lembranças...<br>
+                    Tempos escuros e tristes.<br>
+                    Acontecimentos passados.<br>
+                    Que sugaram minha alma.<br>
+                    Que me deixaram vazio.<br>
+                    <br>
+                    E graças a isso...<br>
+                    Agora passo o tempo todo em frente ao espelho.<br>
+                    Tentando achar algo que perdi em mim mesmo.<br>
+                    Mas por mais que procure eu não acho.<br>
+                    E como sei que nunca vou achar...<br>
+                    Não mais me importa procurar.<br>
+                  </p>
+
+                  <div class="wrapper-flex">
+                    <div class="profile-wrapper">
+                      <img
+                        src="./assets/images/foto.jpg"
+                        alt="Matheus Van Dyke"
+                        width="50"
+                      />
+                    </div>
+
+                    <div class="wrapper">
+                      <a href="#" class="h4">Matheus Van Dyke</a>
+
+                      <p class="text-sm">
+                        <time datetime="23-02-2023">26 Fevereiro, 2023</time>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div name="ignore-#8" class="poema" data-topics="romantico">
+                <div class="poema-banner">
+                  <img
+                    src="./assets/images/images-blog-posts/ignore.jpg"
+                    alt="ignore"
+                    width="250"
+                    class="poema-banner-img"
+                  />
+                </div>
+
+                <div class="blog-content-wrapper">
+                  
+                  <button class="blog-topic text-tiny" data-topic="romantico"> Romântico </button>
+
+                    <a class="titulo-poema" href="./poemas/ignore-8.html">
+                      Ignore #8
+                    </a>
+
+                  <p class="previa-poema">
+                    Viajando pela estrada.<br>
+                    Olhando as luzes da cidade ao longe.<br>
+                    Por mais que eu tente...<br>
+                    Não consigo parar de pensar em você aos montes.<br>
+                    <br>
+                    Sonhos de festa, casamento, café, cigarro e champanhe estourado.<br>
+                    Só é uma pena que esse sentimento não valha nem um centavo.<br>
+                    <br>
+                    Você não consegue se prender.<br>
+                    E eu não consigo me entender.<br>
+                    Depois ainda me perguntam o motivo.<br>
+                    Pra eu pensar que o que eu mais quero não vai acontecer.<br>                 
+                  </p>
+
+                  <div class="wrapper-flex">
+                    <div class="profile-wrapper">
+                      <img
+                        src="./assets/images/foto.jpg"
+                        alt="Matheus Van Dyke"
+                        width="50"
+                      />
+                    </div>
+
+                    <div class="wrapper">
+                      <a href="#" class="h4">Matheus Van Dyke</a>
+
+                      <p class="text-sm">
+                        <time datetime="23-02-2023">26 Fevereiro, 2023</time>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div name="um-coração-seco-#7" class="poema" data-topics="romantico">
+                <div class="poema-banner">
+                  <img
+                    src="./assets/images/images-blog-posts/um-coração-seco.jpeg"
+                    alt="um-coração-seco"
+                    width="250"
+                    class="poema-banner-img"
+                  />
+                </div>
+
+                <div class="blog-content-wrapper">
+                  
+                  <button class="blog-topic text-tiny" data-topic="romantico"> Romântico </button>
+
+                    <a class="titulo-poema" href="./poemas/um-coração-seco-7.html">
+                      Um Coração Seco #7
+                    </a>
+
+                  <p class="previa-poema">
+                    Pétalas de rosas.<br>
+                    Secas, sem graça, sem cor e caídas ao chão.<br>
+                    Como os restos de um antigo amor que não deu certo não.<br>
+                    <br>
+                    De um antigo amor sem graça e sem coração.<br>
+                    <br>
+                    Amargo como um limão.<br>
+                    Ó amargo limão...<br>
+                    Que me deixou ao chão.<br>
+                  </p>
+
+                  <div class="wrapper-flex">
+                    <div class="profile-wrapper">
+                      <img
+                        src="./assets/images/foto.jpg"
+                        alt="Matheus Van Dyke"
+                        width="50"
+                      />
+                    </div>
+
+                    <div class="wrapper">
+                      <a href="#" class="h4">Matheus Van Dyke</a>
+
+                      <p class="text-sm">
+                        <time datetime="23-02-2023">26 Fevereiro, 2023</time>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div name="o-mergulhador-#6" class="poema" data-topics="romantico">
+                <div class="poema-banner">
+                  <img
+                    src="./assets/images/images-blog-posts/o-mergulhador.jpeg"
+                    alt="o-mergulhador"
+                    width="250"
+                    class="poema-banner-img"
+                  />
+                </div>
+
+                <div class="blog-content-wrapper">
+                  
+                  <button class="blog-topic text-tiny" data-topic="romantico"> Romântico </button>
+
+                    <a class="titulo-poema" href="./poemas/o-mergulhador-6.html">
+                      O Mergulhador #6
+                    </a>
+
+                  <p class="previa-poema">
+                    Eu conheci você sem saber de nada.<br>
+                    Eu achava que você era apenas uma poça rasa.<br>
+                    Mas aos poucos fui mergulhando em você.<br>
+                    Me perdendo em seus olhares.<br>
+                    <br>
+                    E me afogando em teu ser que parecia o mais profundo dos mares.<br>
+                  </p>
+
+                  <div class="wrapper-flex">
+                    <div class="profile-wrapper">
+                      <img
+                        src="./assets/images/foto.jpg"
+                        alt="Matheus Van Dyke"
+                        width="50"
+                      />
+                    </div>
+
+                    <div class="wrapper">
+                      <a href="#" class="h4">Matheus Van Dyke</a>
+
+                      <p class="text-sm">
+                        <time datetime="23-02-2023">26 Fevereiro, 2023</time>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div name="me-diga-#5" class="poema" data-topics="romantico">
+                <div class="poema-banner">
+                  <img
+                    src="./assets/images/images-blog-posts/me-diga.jpg"
+                    alt="me-diga"
+                    width="250"
+                    class="poema-banner-img"
+                  />
+                </div>
+
+                <div class="blog-content-wrapper">
+                  
+                  <button class="blog-topic text-tiny" data-topic="romantico"> Romântico </button>
+
+                    <a class="titulo-poema" href="./poemas/me-diga-5.html">
+                      Me Diga #5
+                    </a>
+
+                  <p class="previa-poema">
+                    Amor você é meu veneno.<br>
+                    E meu antídoto ao mesmo tempo.<br>
+                    Te amar me faz tão bem.<br>
+                    Mas também me faz querer morrer.<br>
+                    <br>
+                    Agora eu não sei se falo.<br>
+                    O que sinto ou se eu disfarço.<br>
+                    Me sinto mal só em saber.<br>
+                    Que algo entre nós pode não haver.<br>
+                    <br>
+                    Você é meu total oposto.<br>
+                    Você é a fruta e eu o caroço.<br>
+                    Juntos nos completamos.<br>
+                    Penso em você já faz anos.<br>
+                  </p>
+
+                  <div class="wrapper-flex">
+                    <div class="profile-wrapper">
+                      <img
+                        src="./assets/images/foto.jpg"
+                        alt="Matheus Van Dyke"
+                        width="50"
+                      />
+                    </div>
+
+                    <div class="wrapper">
+                      <a href="#" class="h4">Matheus Van Dyke</a>
+
+                      <p class="text-sm">
+                        <time datetime="23-02-2023">26 Fevereiro, 2023</time>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div name="esperança-#4" class="poema" data-topics="saude-mental">
+                <div class="poema-banner">
+                  <img
+                    src="./assets/images/images-blog-posts/esperança.jpg"
+                    alt="esperança"
+                    width="250"
+                    class="poema-banner-img"
+                  />
+                </div>
+
+                <div class="blog-content-wrapper">
+                  
+                  <button class="blog-topic text-tiny" data-topic="saude-mental"> Saúde Mental </button>
+
+                    <a class="titulo-poema" href="./poemas/esperança-4.html">
+                      Esperança #4
+                    </a>
+
+                  <p class="previa-poema">
+                    Eu olho pela janela e não há nada lá fora.<br>
+                    Apenas a escuridão...<br>
+                    Aquela escuridão.<br>
+                    Que quando esta conosco...<br>
+                    Nos faz querer desistir.<br>
+                    E parar de sonhar.<br>
+                    <br>
+                    Mas não desanime.<br>
+                    Pegue a sua lanterna.<br>
+                    Ilumine seu caminho.<br>
+                    Atravesse a escuridão.<br>
+                    E nunca pare de sonhar.<br>
+                  </p>
+
+                  <div class="wrapper-flex">
+                    <div class="profile-wrapper">
+                      <img
+                        src="./assets/images/foto.jpg"
+                        alt="Matheus Van Dyke"
+                        width="50"
+                      />
+                    </div>
+
+                    <div class="wrapper">
+                      <a href="#" class="h4">Matheus Van Dyke</a>
+
+                      <p class="text-sm">
+                        <time datetime="23-02-2023">26 Fevereiro, 2023</time>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div name="alter-ego-#3" class="poema" data-topics="ficcao">
+                <div class="poema-banner">
+                  <img
+                    src="./assets/images/images-blog-posts/alter-ego.jpg"
+                    alt="alter-ego"
+                    width="250"
+                    class="poema-banner-img"
+                  />
+                </div>
+
+                <div class="blog-content-wrapper">
+                  
+                  <button class="blog-topic text-tiny" data-topic="ficcao"> Ficção </button>
+
+                    <a class="titulo-poema" href="./poemas/alter-ego-3.html">
+                      Alter Ego #3
+                    </a>
+
+                  <p class="previa-poema">
+                    A poucas horas foi visto um homem perambulando pelas ruas aqui da cidade.<br>
+                    Traficando inspiração e fazendo apologia a criatividade.<br>
+                    Sua arma era uma caneta velha, e sua vitima...<br>
+                    Um caderno de anotações que ele guardava em sua jaqueta de couro surrada.<br>
+                    <br>
+                    Alguém tem pistas do assassinato?
+                  </p>
+
+                  <div class="wrapper-flex">
+                    <div class="profile-wrapper">
+                      <img
+                        src="./assets/images/foto.jpg"
+                        alt="Matheus Van Dyke"
+                        width="50"
+                      />
+                    </div>
+
+                    <div class="wrapper">
+                      <a href="#" class="h4">Matheus Van Dyke</a>
+
+                      <p class="text-sm">
+                        <time datetime="23-02-2023">26 Fevereiro, 2023</time>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div name="momentos-#2" class="poema" data-topics="reflexao">
+                <div class="poema-banner">
+                  <img
+                    src="./assets/images/images-blog-posts/momentos.jpg"
+                    alt="momentos"
+                    width="250"
+                    class="poema-banner-img"
+                  />
+                </div>
+
+                <div class="blog-content-wrapper">
+                  
+                  <button class="blog-topic text-tiny" data-topic="reflexao"> Reflexão </button>
+
+                    <a class="titulo-poema" href="./poemas/momentos-2.html">
+                      Momentos #2
+                    </a>
+
+                  <p class="previa-poema">
+                    Momentos.<br>
+                    Eles são como o que nas nuvens vemos.<br>
+                    Quando duas ou mais se encontram sem querer.<br>
+                    E se transformam numa forma linda de se ver.<br>
+                    Que vem e vão, nunca voltam.<br>
+                    Se entrelaçam e depois se soltam.<br>
+                    Pondo um fim ao que deram início com uma linda dança.<br>
+                    E deixam para trás apenas lembranças.<br>
+                    De algo que você já viu, e não verá de novo nunca.<br>
+                    Pois esses momentos foram uma chance única.<br>
+                  </p>
+
+                  <div class="wrapper-flex">
+                    <div class="profile-wrapper">
+                      <img
+                        src="./assets/images/foto.jpg"
+                        alt="Matheus Van Dyke"
+                        width="50"
+                      />
+                    </div>
+
+                    <div class="wrapper">
+                      <a href="#" class="h4">Matheus Van Dyke</a>
+
+                      <p class="text-sm">
+                        <time datetime="23-02-2023">26 Fevereiro, 2023</time>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div name="amor-de-inverno-#1" class="poema" data-topics="romantico">
+                <div class="poema-banner">
+                  <img
+                    src="./assets/images/images-blog-posts/amor-de-inverno.jpg"
+                    alt="amor-de-inverno"
+                    width="250"
+                    class="poema-banner-img"
+                  />
+                </div>
+
+                <div class="blog-content-wrapper">
+                  
+                  <button class="blog-topic text-tiny" data-topic="romantico"> Romântico </button>
+
+                    <a class="titulo-poema" href="./poemas/amor-de-inverno-1.html">
+                      Amor de Inverno #1
+                    </a>
+
+                  <p class="previa-poema">
+                    No inverno eu encontro ela.<br>
+                    Passamos o domingo dentro de casa.<br>
+                    Olhando a vista em frente a janela.<br>
+                    Nesse dia frio e chuvoso.<br>
+                    Eu consigo encontrar o calor e o conforto.<br>
+                    <br>
+                    Não com uma lareira na minha frente.<br>
+                    Ou sentado no sofá e bebendo um chocolate quente...<br>
+                    Mas sim no calor e conforto dos teus braços.<br>
+                    Apenas teu corpo e meus braços.<br>
+                    Enquanto te abraço.<br>
+                  </p>
+
+                  <div class="wrapper-flex">
+                    <div class="profile-wrapper">
+                      <img
+                        src="./assets/images/foto.jpg"
+                        alt="Matheus Van Dyke"
+                        width="50"
+                      />
+                    </div>
+
+                    <div class="wrapper">
+                      <a href="#" class="h4">Matheus Van Dyke</a>
+
+                      <p class="text-sm">
+                        <time datetime="23-02-2023">26 Fevereiro, 2023</time>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <button class="btn load-more">Carregue Mais</button>
+          </div>
+
+          <!--
+          - ASIDE
+        -->
+
+          <div class="aside">
+            <div class="topics">
+              <h2 class="h2">Tópicos</h2>
+
+              <a href="#" class="topic-btn" data-topic="romantico">
+                <div class="icon-box">
+                  <ion-icon name="bookmark-outline"></ion-icon>
+                </div>
+
+                <p>Romântico</p>
+              </a>
+
+              <a href="#" class="topic-btn" data-topic="saude-mental">
+                <div class="icon-box">
+                  <ion-icon name="bookmark-outline"></ion-icon>
+                </div>
+
+                <p>Saúde Mental</p>
+              </a>
+
+              <a href="#" class="topic-btn" data-topic="reflexao">
+                <div class="icon-box">
+                  <ion-icon name="bookmark-outline"></ion-icon>
+                </div>
+
+                <p>Reflexão</p>
+              </a>
+
+              <a href="#" class="topic-btn" data-topic="ficcao">
+                <div class="icon-box">
+                  <ion-icon name="bookmark-outline"></ion-icon>
+                </div>
+
+                <p>Ficção</p>
+              </a>
+            </div>
+
+            <div class="tags">
+              <h2 class="h2">Tags</h2>
+
+              <div class="wrapper">
+                <button class="hashtag">#escrita</button>
+                <button class="hashtag">#poema</button>
+                <button class="hashtag">#poesia</button>
+                <button class="hashtag">#arte</button>
+                <button class="hashtag">#literatura</button>
+              </div>
+            </div>
+
+            <div class="contact">
+              <h2 class="h2">Redes Sociais</h2>
+
+              <div class="wrapper">
+                <p>
+                  Quer ler os poemas no Instagram ou Facebook? Aqui estão as minhas redes:
+                </p>
+
+                <ul class="social-link">
+
+                  <li>
+                    <a href="https://www.instagram.com/saturno.fenix.poesias/" class="icon-box instagram">
+                      <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="https://www.facebook.com/saturno.fenix.poesias" class="icon-box facebook">
+                      <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!---
+    - #FOOTER
+  -->
+
+    <footer>
+
+      <p class="copyright">
+        <br>
+        O Código desse site é aberto e licenciado sob a licença Apache v2.
+        <br>
+        Mas todos os poemas são proprietários e estão sob a licença CC by-NC-SA 4.0
+        <br><br>
+        &copy; Copyright 2023
+        <br><br>
+      </p>
+
+    </footer>
+
+    <!--
+    - links js
+  -->
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/search-bar.js"></script>
+    <script src="./assets/js/remember-theme.js"></script>
+
+    <!--
+    - link do ionicon
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
