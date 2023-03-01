@@ -21,13 +21,13 @@ To install **DevBlog**, follow these steps:
 Linux and macOS:
 
 ```
-sudo git clone https://github.com/codewithsadee/devblog-personal-blog-website.git
+sudo git clone https://github.com/matheus-vandyke/saturno-fenix-poesias-blog
 ```
 
 Windows:
 
 ```
-git clone https://github.com/codewithsadee/devblog-personal-blog-website.git
+git clone https://github.com/matheus-vandyke/saturno-fenix-poesias-blog
 ```
 
 ## Contact
