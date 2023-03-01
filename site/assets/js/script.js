@@ -14,11 +14,8 @@ navCloseBtn.addEventListener('click', navToggleFunc);
 
 
 
-/**
-
 // theme toggle variables
 const themeBtn = document.querySelectorAll('.theme-btn');
-
 
 for (let i = 0; i < themeBtn.length; i++) {
 
@@ -41,5 +38,3 @@ for (let i = 0; i < themeBtn.length; i++) {
   })
 
 }
-
-*/
