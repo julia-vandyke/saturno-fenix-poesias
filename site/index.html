@@ -6,6 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Saturno Fenix Poesias</title>
 
+    <script>
+      // Wait for document to load
+      document.addEventListener("DOMContentLoaded", function (event) {
+        document.documentElement.setAttribute("data-theme", "light");
+
+        // Get our button switcher
+        var themeBtn = document.getElementsByClassName('theme-btn');
+
+        // When our button gets clicked
+        themeBtn.onclick = function () {
+          // Get the current selected theme, on the first run
+          // it should be `light`
+          var currentTheme = document.documentElement.getAttribute("data-theme");
+
+          // Switch between `dark` and `light`
+          var switchToTheme = currentTheme === "dark" ? "light" : "dark"
+
+          // Set our currenet theme to the new one
+          document.documentElement.setAttribute("data-theme", switchToTheme);
+        }
+      });
+    </script>
+
     <!--
     - favicon
   -->
@@ -1052,7 +1075,6 @@
   -->
     <script src="./assets/js/script.js"></script>
     <script src="./assets/js/search-bar.js"></script>
-    <script src="./assets/js/remember-theme.js"></script>
 
     <!--
     - link do ionicon
