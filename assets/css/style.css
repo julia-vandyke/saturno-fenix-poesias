@@ -464,6 +464,20 @@ header .btn-group {
   text-align: center;
 }
 
+.sobre-mim .poema-banner { 
+  display: block;
+  overflow: hidden;
+  border-radius: 5px;
+  text-align: center; 
+}
+
+.sobre-mim .poema-banner-img {
+  width:  100%;
+  height: 100%;
+  object-fit: cover;
+  text-align: center;
+}
+
 .blog-content-wrapper { padding: 10px 5px; }
 
 .blog-topic {
@@ -544,6 +558,40 @@ header .btn-group {
 
 .previa-poema,
 .profile-wrapper { display: none; }
+
+.poema-completo .wrapper-flex {
+  display: block;
+}
+
+.sobre-mim .wrapper-flex {
+  display: block;
+}
+
+.poema-completo .profile-wrapper {
+  display: block;
+  width:  56px;
+  height: 56px;
+  background: var(--action-primary);
+  padding: 3px;
+  border-radius: 50%;
+}
+
+.sobre-mim .profile-wrapper {
+  display: block;
+  width:  56px;
+  height: 56px;
+  background: var(--action-primary);
+  padding: 3px;
+  border-radius: 50%;
+}
+
+.poema-completo .profile-wrapper img { 
+  border-radius: 50%; 
+}
+
+.sobre-mim .profile-wrapper img { 
+  border-radius: 50%; 
+}
 
 .texto-poema-completo { 
   display: block; 
