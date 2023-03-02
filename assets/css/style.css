@@ -392,6 +392,10 @@ header .btn-group {
 
 .poemas-group { margin-bottom: 3rem; }
 
+.poemas-group .poema { display: none; }
+
+.poemas-group .poema.show { display: grid; }
+
 .poema {
   background: var(--background-primary);
   padding: 10px;
