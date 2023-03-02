@@ -51,8 +51,8 @@ for (let i = 0; i < themeBtn.length; i++) {
 
     // Tema dos botões de mudar o tema
     for (let i = 0; i < themeBtn.length; i++) {
-      themeBtn[i].classList.toggle('light');
       themeBtn[i].classList.toggle('dark');
+      themeBtn[i].classList.toggle('light');
     }
   });
 }
