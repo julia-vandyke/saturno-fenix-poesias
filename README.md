@@ -41,4 +41,5 @@ Pode entrar em contato pelo email: matheusvandyke333@gmail.com.
 ## Licença
 
 O Código desse site é aberto e licenciado sob a licença Apache v2.
+
 Mas todos os poemas são proprietários e estão sob a licença CC by-NC-SA 4.0
