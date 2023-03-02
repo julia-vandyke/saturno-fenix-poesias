@@ -2,9 +2,14 @@
 
 Esse projeto é uma fork de outro repositório, onde implementei mais algumas funções que não tinham no original, sendo elas o filtro de posts, barra de busca, botão flutuante de home, botão de load-more funcional, e modo escuro global em todas as paginas, alem de algumas mudanças no HTML e CSS.
 
-![Repositorio original](https://img.shields.io/github/repo-size/codewithsadee/devblog-personal-blog-website)
 
-![Forks](https://img.shields.io/github/forks/codewithsadee/devblog-personal-blog-website?style=social)
+![repositório](https://img.shields.io/github/repo-size/matheus-vandyke/saturno-fenix-poesias-blog)
+
+![forks](https://img.shields.io/github/forks/matheus-vandyke/saturno-fenix-poesias-blog?style=social)
+
+Repositorio original: https://github.com/codewithsadee/devblog-personal-blog-website
+
+Forks: https://github.com/codewithsadee/devblog-personal-blog-website/forks
 
 
 ## Prerequisites
