@@ -324,7 +324,14 @@ header .btn-group {
 
 .mobile-nav .nav-item { margin-bottom: 0.5rem; }
 
+.mobile-nav .nav-item-href { margin-bottom: 0.5rem; }
+
 .mobile-nav .nav-link {
+  font-size: var(--fs-3);
+  color: var(--foreground-secondary);
+}
+
+.mobile-nav .nav-link-href {
   font-size: var(--fs-3);
   color: var(--foreground-secondary);
 }

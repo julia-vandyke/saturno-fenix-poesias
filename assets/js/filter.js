@@ -1,4 +1,3 @@
-
 // Código que funcinou:
 
 $(document).ready(function() {
