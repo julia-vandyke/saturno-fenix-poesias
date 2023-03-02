@@ -1,6 +1,6 @@
 # Saturno Fenix Poesias - Blog de Poemas
 
-Esse projeto é uma fork de outro repositório, onde implementei mais algumas funções que não tinham no original, sendo elas o filtro de posts, barra de busca, botão flutuante de home, e modo escuro global em todas as paginas, alem de algumas mudanças no HTML e CSS.
+Esse projeto é uma fork de outro repositório, onde implementei mais algumas funções que não tinham no original, sendo elas o filtro de posts, barra de busca, botão flutuante de home, botão de load-more funcional, e modo escuro global em todas as paginas, alem de algumas mudanças no HTML e CSS.
 
 ![Repositorio original](https://img.shields.io/github/repo-size/codewithsadee/devblog-personal-blog-website)
 
