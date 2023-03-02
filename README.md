@@ -1,6 +1,8 @@
 # Saturno Fenix Poesias - Blog de Poemas
 
-Esse projeto é uma fork de outro repositório, onde implementei mais algumas funções que não tinham no original, sendo elas o filtro de posts, barra de busca, botão flutuante de home, botão de load-more funcional, e modo escuro global em todas as paginas, alem de algumas mudanças no HTML e CSS.
+Esse projeto é uma fork de outro repositório, onde implementei mais algumas funções que não tinham no original, sendo elas o filtro de posts, barra de busca, botão flutuante de home, botão de load-more funcional, e modo escuro global em todas as paginas, alem de algumas mudanças no HTML e CSS. 
+
+Obs: O tamanho do projeto esta maior do que o normal pelo fato das imagens estarem em .jpeg ao invés de .webp, logo irei converter todas a imagens para .webp para reduzir o tamanho.
 
 
 ![repositório](https://img.shields.io/github/repo-size/matheus-vandyke/saturno-fenix-poesias-blog) ![forks](https://img.shields.io/github/forks/matheus-vandyke/saturno-fenix-poesias-blog?style=social)
@@ -10,18 +12,17 @@ Repositorio original: https://github.com/codewithsadee/devblog-personal-blog-web
 Outras Forks: https://github.com/codewithsadee/devblog-personal-blog-website/forks
 
 
-## Prerequisites
+## Requisitos
 
-Before you begin, ensure you have met the following requirements:
-<!--- These are just example requirements. Add, duplicate or remove as required --->
+Antes de começar, tenha certeza de ter os seguintes requisitos instalados:
 
-* [Git](https://git-scm.com/downloads "Download Git") must be installed on your operating system.
+* [Git](https://git-scm.com/downloads "Download Git") precisa estar instalado no seu sistema operacional.
 
-## Installing DevBlog
+## Instalando o Projeto
 
-To install **DevBlog**, follow these steps:
+Siga esses passos:
 
-Linux and macOS:
+Linux e macOS:
 
 ```
 sudo git clone https://github.com/matheus-vandyke/saturno-fenix-poesias-blog
@@ -33,12 +34,11 @@ Windows:
 git clone https://github.com/matheus-vandyke/saturno-fenix-poesias-blog
 ```
 
-## Contact
+## Contato
 
-If you want to contact me you can reach me at [Twitter](https://www.twitter.com/codewithsadee).
+Pode entrar em contato pelo email: matheusvandyke333@gmail.com.
 
-## License
-<!--- If you're not sure which open license to use see https://choosealicense.com/--->
+## Licença
 
-This project is free to use and does not contains any license.
-
+O Código desse site é aberto e licenciado sob a licença Apache v2.
+Mas todos os poemas são proprietários e estão sob a licença CC by-NC-SA 4.0
