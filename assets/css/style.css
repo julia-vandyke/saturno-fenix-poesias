@@ -331,6 +331,12 @@ header .btn-group {
 
 .mobile-nav .nav-link:hover { color: var(--accent); }
 
+.aviso {
+  padding: 15px;
+  color: var(--foreground-secondary);
+  font-weight: 400;
+}
+
 
 
 
@@ -444,6 +450,20 @@ header .btn-group {
 
 .poema-banner { display: none; }
 
+.poema-completo .poema-banner {
+  display: block;
+  overflow: hidden;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.poema-completo .poema-banner-img {
+  width:  100%;
+  height: 100%;
+  object-fit: cover;
+  text-align: center;
+}
+
 .blog-content-wrapper { padding: 10px 5px; }
 
 .blog-topic {
@@ -525,7 +545,11 @@ header .btn-group {
 .previa-poema,
 .profile-wrapper { display: none; }
 
-.texto-poema-completo { display: block; margin-bottom: 3rem;}
+.texto-poema-completo { 
+  display: block; 
+  margin-bottom: 3rem;
+  color: var(--foreground-secondary);
+}
 
 .profile-wrapper { display: none; }
 
@@ -759,7 +783,11 @@ footer .wrapper { text-align: center; }
   .previa-poema,
   .profile-wrapper { display: block; }
 
-  .texto-poema-completo { display: block; margin-bottom: 3rem;}
+  .texto-poema-completo { 
+    display: block; 
+    margin-bottom: 3rem;
+    color: var(--foreground-secondary);
+  }
 
   .profile-wrapper { display: block; }
 
