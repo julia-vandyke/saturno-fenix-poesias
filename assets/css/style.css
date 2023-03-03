@@ -466,7 +466,7 @@ header .btn-group {
 
 .poema-completo .poema-banner-img {
   width:  100%;
-  height: 100%;
+  height: 200px;
   object-fit: cover;
   text-align: center;
 }
@@ -774,6 +774,13 @@ footer .wrapper { text-align: center; }
     text-align: center;
   }
 
+  .poema-completo .poema-banner-img {
+    width:  100%;
+    height: 350px;
+    object-fit: cover;
+    text-align: center;
+  }
+
 }
 
 
@@ -892,7 +899,6 @@ footer .wrapper { text-align: center; }
   }
 
 
-
   /**
    * FOOTER 
    */
@@ -929,7 +935,6 @@ footer .wrapper { text-align: center; }
 
 
 
-
 /**
  * responsivo para telas maiores que 1024px
  */
@@ -946,8 +951,6 @@ footer .wrapper { text-align: center; }
     --fs-1: 3rem;
 
   }
-
-
 
   /**
    * ESTILO REUTILIZADO
