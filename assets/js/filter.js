@@ -6,10 +6,10 @@ $(document).ready(function() {
     event.preventDefault(); // Impede que o comportamento padrão do link seja acionado
     var topic = $(this).data('topic');
     if (topic === 'todos') {
-      $('.poema').show();
+      $('.poema').css("display", "grid")();
     } else {
       $('.poema').hide();
-      $('.poema[data-topics*="' + topic + '"]').show();
+      $('.poema[data-topics*="' + topic + '"]').css("display", "grid")();
     }
   });
 
@@ -24,10 +24,10 @@ $(document).ready(function() {
     event.preventDefault(); // Impede que o comportamento padrão do link seja acionado
     var topic = $(this).data('topic');
     if (topic === 'todos') {
-      $('.poema').show();
+      $('.poema').css("display", "grid")();
     } else {
       $('.poema').hide();
-      $('.poema[data-topics*="' + topic + '"]').show();
+      $('.poema[data-topics*="' + topic + '"]').css("display", "grid")();
     }
   });
 
@@ -36,10 +36,10 @@ $(document).ready(function() {
     event.preventDefault(); // Impede que o comportamento padrão do botão seja acionado
     var topic = $(this).data('topic');
     if (topic === 'todos') {
-      $('.poema').show();
+      $('.poema').css("display", "grid")();
     } else {
       $('.poema').hide();
-      $('.poema[data-topics*="' + topic + '"]').show();
+      $('.poema[data-topics*="' + topic + '"]').css("display", "grid")();
     }
   });
 });
