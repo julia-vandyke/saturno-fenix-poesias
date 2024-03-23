@@ -1170,7 +1170,7 @@ footer .wrapper { text-align: center; }
   .tags { margin-bottom: 3rem; }
 
   .tags .wrapper {
-    display:   flex;
+    display: flex;
     flex-wrap: wrap;
     gap: 0.2rem;
   }
