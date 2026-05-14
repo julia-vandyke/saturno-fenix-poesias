@@ -11,14 +11,14 @@
   -->
     <link
       rel="shortcut icon"
-      href="../assets/images/logo.png"
+      href="./assets/images/logo.jpg"
       type="image/x-icon"
     />
 
     <!--
     - link css customizado
   -->
-    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
     <!--
     - link da google fonts
@@ -31,7 +31,7 @@
     />
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="../assets/js/filter.js"></script>
+    <script src="./assets/js/filter.js"></script>
   </head>
 
   <body class="light-theme">
@@ -39,16 +39,16 @@
     - #HEADER
   -->
 
-    <a href="../index.html" class="floating-btn">
+    <a href="./index.html" class="floating-btn">
       <ion-icon name="home-outline"></ion-icon>
     </a>
 
     <header>
       <div class="container">
         <nav class="navbar">
-          <a href="../index.html">
+          <a href="./index.html">
             <img
-              src="../assets/images/logo.png"
+              src="./assets/images/logo.png"
               alt="logo do site, créditos: Grandfailure"
               width="150"
               height="150"
@@ -70,11 +70,11 @@
           <div class="flex-wrapper">
             <ul class="desktop-nav">
               <li>
-                <a href="../index.html" class="nav-link">Início</a>
+                <a href="#" class="nav-link">Início</a>
               </li>
 
               <li>
-                <a href="../sobre-mim.html" class="nav-link">Sobre Mim</a>
+                <a href="./sobre-mim.html" class="nav-link">Sobre Mim</a>
               </li>
             </ul>
 
@@ -94,19 +94,35 @@
 
               <ul>
                 <li class="nav-item-href">
-                  <a href="../index.html" class="nav-link-href">Início</a>
+                  <a href="./index.html" class="nav-link-href">Início</a>
                 </li>
 
                 <li class="nav-item-href">
-                  <a href="../sobre-mim.html" class="nav-link-href">Sobre Mim</a>
+                  <a href="./sobre-mim.html" class="nav-link-href">Sobre Mim</a>
                 </li>
               </ul>
             </div>
 
-            <div class="contact">
-              <div class="wrapper">
-                <p class="aviso"> Para pesquisar por mais poemas, volte para a pagina "Início" </p>
-              </div>
+            <div>
+              <p class="h3 nav-title">Tópicos</p>
+
+              <ul>
+                <li class="nav-item" data-topic="romantico">
+                  <a href="#" class="nav-link">Romântico</a>
+                </li>
+
+                <li class="nav-item" data-topic="saude-mental">
+                  <a href="#" class="nav-link">Saúde Mental</a>
+                </li>
+
+                <li class="nav-item" data-topic="reflexao">
+                  <a href="#" class="nav-link">Reflexão</a>
+                </li>
+
+                <li class="nav-item" data-topic="ficcao">
+                  <a href="#" class="nav-link">Ficção</a>
+                </li>
+              </ul>
             </div>
           </div>
         </nav>
@@ -121,16 +137,16 @@
       <div class="hero">
         <div class="container">
           <div class="left">
-            <a class="h1" href="../index.html">
+            <a class="h1" href="./index.html">
               Seja bem vindo ao <b>Perdida em mim mesma</b>. <br />
             </a>
 
-            <a class="h3" href="../index.html">
+            <a class="h3" href="./index.html">
               Todos os poemas foram feitos com muito carinho e dedicação. Tenha uma boa leitura.
             </a>
 
             <div class="btn-group">
-              <a href="../sobre-mim.html" class="btn btn-primary">Sobre Mim</a>
+              <a href="./sobre-mim.html" class="btn btn-primary">Sobre Mim</a>
             </div>
           </div>
 
@@ -138,13 +154,20 @@
             <div class="pattern-bg"></div>
             <div class="img-box">
               <img
-                src="../assets/images/foto2.png"
+                src="./assets/images/foto2.png"
                 alt="Julia Van Dyke"
                 class="hero-img"
               />
               <div class="shape shape-1"></div>
               <div class="shape shape-2"></div>
             </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="search-container">
+            <input type="text" id="search-bar" placeholder="Digite aqui...">
+            <button type="submit" id="search-btn">Pesquisar<i class="fa fa-search"></i></button>
+            </label>
           </div>
         </div>
       </div>
